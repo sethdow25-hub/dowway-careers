@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Dowway, LLC is hiring a part-time Operations & Logistics Assistant in Disputanta, VA. $12.77/hour, school-friendly schedule, paid certifications.">
+<title>Operations & Logistics Assistant · Dowway, LLC</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+html { color-scheme: light; }
+body { margin: 0; }
+img { max-width: 100%; }
+[hidden] { display: none !important; }
+.apply-card { background: var(--sheet); border: 1px solid var(--rule); border-radius: 6px; padding: 20px; display: grid; gap: 14px; min-width: 0; }
+.note { font-size: 15px; color: var(--muted); }
+/* Layout: a posting printed on ledger stock — narrow reading column, a pay "stub" up top, sections ruled like a timesheet */
+:root {
+  --paper: #f3f5f2;
+  --sheet: #ffffff;
+  --ink: #1b2a24;
+  --muted: #5b6b63;
+  --rule: #d5ddd7;
+  --accent: #1f6b4f;
+  --accent-soft: #e2efe8;
+  --mark: #f2d64b;
+  --display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --body: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --mono: "JetBrains Mono", ui-monospace, Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #111815; --sheet: #18211d; --ink: #e6ede9; --muted: #9aaba2;
+    --rule: #2c3833; --accent: #6fcca5; --accent-soft: #1d3029; --mark: #b99d1c;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #111815; --sheet: #18211d; --ink: #e6ede9; --muted: #9aaba2;
+  --rule: #2c3833; --accent: #6fcca5; --accent-soft: #1d3029; --mark: #b99d1c;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { background: var(--paper); color: var(--ink); font-family: var(--body); font-size: 17px; line-height: 1.6; padding-inline: 16px; padding-block: 32px 64px; }
+.wrap { max-width: 760px; margin: 0 auto; display: grid; gap: 40px; }
+h1, h2, h3 { font-family: var(--display); line-height: 1.1; text-wrap: balance; margin: 0; }
+p { margin: 0; max-width: 65ch; }
+.eyebrow { font-family: var(--mono); font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
+
+header { display: grid; gap: 16px; }
+header h1 { font-size: clamp(2.2rem, 7vw, 3.6rem); font-weight: 800; letter-spacing: -.02em; }
+header h1 span { background: linear-gradient(transparent 62%, var(--mark) 62%, var(--mark) 92%, transparent 92%); padding-inline: 2px; }
+.meta { display: flex; flex-wrap: wrap; gap: 8px 20px; font-family: var(--mono); font-size: 13px; color: var(--muted); }
+.lede { font-size: 1.15rem; }
+
+/* Pay stub summary */
+.stub { background: var(--sheet); border: 1px solid var(--rule); border-radius: 6px; display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); }
+.stub div { padding: 16px 18px; border-right: 1px dashed var(--rule); display: grid; gap: 4px; min-width: 0; }
+.stub div:last-child { border-right: 0; }
+.stub b { font-family: var(--mono); font-size: 1.35rem; font-weight: 600; font-variant-numeric: tabular-nums; color: var(--accent); }
+.stub small { font-family: var(--mono); font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+
+section { display: grid; gap: 18px; border-top: 2px solid var(--ink); padding-top: 20px; }
+section h2 { font-size: 1.6rem; font-weight: 700; }
+
+.duties { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px 32px; }
+.duties h3 { font-size: 1.05rem; font-weight: 700; margin-bottom: 6px; }
+.duties ul, .plain { margin: 0; padding-left: 1.1em; display: grid; gap: 6px; }
+.duties li::marker, .plain li::marker { color: var(--accent); }
+
+.table-scroll { overflow-x: auto; border: 1px solid var(--rule); border-radius: 6px; background: var(--sheet); }
+table { width: 100%; border-collapse: collapse; font-size: 15px; min-width: 460px; }
+th, td { text-align: left; padding: 10px 14px; border-bottom: 1px solid var(--rule); vertical-align: top; }
+th { font-family: var(--mono); font-size: 11px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+tr:last-child td { border-bottom: 0; }
+td.num { font-family: var(--mono); font-variant-numeric: tabular-nums; white-space: nowrap; }
+tfoot td { font-weight: 600; background: var(--accent-soft); }
+.tag { display: inline-block; font-family: var(--mono); font-size: 11px; padding: 2px 8px; border-radius: 99px; background: var(--accent-soft); color: var(--accent); white-space: nowrap; }
+.tag.req { background: var(--mark); color: #1b2a24; }
+
+.rules { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; }
+.rules div { border-left: 3px solid var(--accent); padding: 4px 0 4px 12px; display: grid; gap: 2px; }
+.rules b { font-family: var(--display); font-size: 1.3rem; }
+.rules span { font-size: 14px; color: var(--muted); }
+
+.steps { margin: 0; padding: 0; list-style: none; display: grid; gap: 14px; counter-reset: s; }
+.steps li { display: grid; grid-template-columns: 40px 1fr; gap: 12px; counter-increment: s; }
+.steps li::before { content: counter(s); font-family: var(--mono); font-weight: 600; width: 32px; height: 32px; border-radius: 50%; border: 1.5px solid var(--accent); color: var(--accent); display: grid; place-items: center; }
+.steps strong { font-family: var(--display); }
+
+.cta { display: inline-block; font-family: var(--display); font-weight: 700; font-size: 1.05rem; background: var(--accent); color: var(--sheet); text-decoration: none; padding: 10px 20px; border-radius: 6px; }
+.cta:hover { filter: brightness(1.1); }
+.cta:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible { outline: 3px solid var(--mark); outline-offset: 2px; }
+
+.apply-grid { display: grid; grid-template-columns: minmax(0, 1fr) 200px; gap: 28px; align-items: start; }
+@media (max-width: 640px) { .apply-grid { grid-template-columns: 1fr; } }
+.qr { background: var(--sheet); border: 1px solid var(--rule); border-radius: 6px; padding: 14px; display: grid; gap: 10px; justify-items: center; text-align: center; }
+.qr-box { background: #ffffff; padding: 8px; border-radius: 4px; width: 100%; max-width: 172px; }
+.qr-box svg { display: block; width: 100%; height: auto; }
+.qr small { font-size: 13px; color: var(--muted); }
+.linkline { font-family: var(--mono); font-size: 11px; word-break: break-all; color: var(--muted); }
+
+form { background: var(--sheet); border: 1px solid var(--rule); border-radius: 6px; padding: 20px; display: grid; gap: 16px; min-width: 0; }
+.row { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; }
+.field { display: grid; gap: 6px; min-width: 0; }
+.field > label, fieldset legend { font-family: var(--mono); font-size: 11px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+input[type=text], input[type=email], input[type=date], textarea, select { font: inherit; font-size: 16px; color: var(--ink); background: var(--paper); border: 1px solid var(--rule); border-radius: 4px; padding: 9px 11px; width: 100%; }
+textarea { min-height: 96px; resize: vertical; }
+fieldset { border: 0; margin: 0; padding: 0; display: grid; gap: 8px; }
+.checks { display: flex; flex-wrap: wrap; gap: 8px 18px; }
+.checks label, .agree { display: flex; gap: 8px; align-items: flex-start; font-size: 15px; }
+.checks input, .agree input { margin-top: 5px; accent-color: var(--accent); }
+button { font-family: var(--display); font-weight: 700; font-size: 1rem; background: var(--accent); color: var(--sheet); border: 0; border-radius: 6px; padding: 11px 22px; cursor: pointer; justify-self: start; }
+button:disabled { opacity: .5; cursor: default; }
+button.ghost { background: transparent; color: var(--accent); border: 1.5px solid var(--accent); padding: 6px 12px; font-size: 13px; }
+.status { font-size: 15px; padding: 10px 14px; border-radius: 4px; background: var(--accent-soft); }
+.status.warn { background: var(--mark); color: #1b2a24; }
+
+.apps { display: grid; gap: 12px; }
+.app { background: var(--sheet); border: 1px solid var(--rule); border-radius: 6px; padding: 16px; display: grid; gap: 6px; font-size: 15px; }
+.app h3 { font-size: 1.1rem; }
+.app dl { margin: 0; display: grid; grid-template-columns: max-content minmax(0, 1fr); gap: 4px 14px; }
+.app dt { font-family: var(--mono); font-size: 11px; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); padding-top: 3px; }
+.app dd { margin: 0; overflow-wrap: anywhere; }
+
+footer { font-family: var(--mono); font-size: 12px; color: var(--muted); border-top: 1px solid var(--rule); padding-top: 16px; }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header>
+    <div class="eyebrow">Now hiring · Part-time · Youth position (ages 14–15)</div>
+    <h1>Operations &amp; Logistics <span>Assistant</span></h1>
+    <div class="meta">
+      <span>Dowway, LLC</span>
+      <span>Disputanta, VA</span>
+      <span>Household management / family office</span>
+    </div>
+    <p><a class="cta" href="#apply">Apply now →</a></p>
+    <p class="lede">Learn how a real operation runs. You'll track spending, manage supplies, keep calendars straight and write the procedures that hold it all together, while earning a paycheck and professional certifications along the way.</p>
+  </header>
+
+  <div class="stub" aria-label="Position at a glance">
+    <div><small>Hourly rate</small><b>$12.77</b></div>
+    <div><small>Hours / week</small><b>Up to 18</b></div>
+    <div><small>Pay cycle</small><b>Bi-weekly</b></div>
+    <div><small>Cert. bonuses</small><b>up to $260</b></div>
+  </div>
+
+  <section>
+    <h2>What you'll do</h2>
+    <div class="duties">
+      <div>
+        <h3>Financial tracking &amp; budgeting</h3>
+        <ul>
+          <li>Log, categorize and reconcile weekly expenses in Google Sheets</li>
+          <li>Audit receipts, utility statements and subscriptions for savings</li>
+          <li>Prepare monthly budget vs. actual reports</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Inventory &amp; procurement</h3>
+        <ul>
+          <li>Keep live counts of household and project supplies</li>
+          <li>Set reorder thresholds so nothing runs out</li>
+          <li>Compare vendor pricing, track packages, handle returns</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Scheduling &amp; digital organization</h3>
+        <ul>
+          <li>Manage and audit shared Google Calendars</li>
+          <li>Learn to schedule your own appointments: call or book online, confirm the details, add each one to your Google Calendar and invite your supervisor as a guest</li>
+          <li>Keep your Google Calendar shared with your supervisor so all appointments stay visible</li>
+          <li>Organize Drive folders using <code>YYYY-MM-DD_Vendor_Description</code> naming</li>
+          <li>Sort incoming email and flag priority items</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Special projects &amp; SOPs</h3>
+        <ul>
+          <li>Request vendor quotes and schedule maintenance</li>
+          <li>Support event and travel logistics</li>
+          <li>Write standard operating procedures for routine work</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Schedule</h2>
+    <p>Shifts are built around school, up to 18 hours per school week. During summer break, hours can increase to as many as 40 per week. A typical school week looks like this:</p>
+    <div class="table-scroll">
+      <table>
+        <thead><tr><th>Day</th><th>Hours</th><th>Shift</th><th>Focus</th></tr></thead>
+        <tbody>
+          <tr><td>Monday</td><td class="num">4:00–7:00 PM</td><td class="num">3.0 hrs</td><td>Expense logging, reconciliations, receipt audits</td></tr>
+          <tr><td>Wednesday</td><td class="num">4:00–7:00 PM</td><td class="num">3.0 hrs</td><td>Calendar audit, logistics tracking, email sorting</td></tr>
+          <tr><td>Friday</td><td class="num">4:00–7:00 PM</td><td class="num">3.0 hrs</td><td>Inventory count, restock orders, weekend planning</td></tr>
+          <tr><td>Saturday</td><td class="num">9:00 AM–12:00 PM</td><td class="num">3.0 hrs</td><td>Special projects, organizing, vendor coordination</td></tr>
+        </tbody>
+        <tfoot><tr><td colspan="2">Typical week</td><td class="num">12.0 hrs</td><td>Additional hours available, up to 18 per school week</td></tr></tfoot>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <h2>Pay &amp; benefits</h2>
+    <ul class="plain">
+      <li><strong>$12.77/hour</strong>, the Virginia minimum wage, paid bi-weekly with an itemized pay stub</li>
+      <li>Paid observed holidays: New Year's Day, Memorial Day, Labor Day, Thanksgiving and Christmas Day</li>
+      <li>Time-and-a-half (<strong>$19.16/hour</strong>) for agreed hours worked on a holiday</li>
+      <li>Discretionary year-end bonus of 1–2 weeks' regular wages</li>
+      <li>Paid training hours for required certification courses</li>
+      <li>Academic grace period: hours can pause or shrink around exams with no penalty</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Certifications &amp; bonuses</h2>
+    <p>Every course fee, book and exam is fully paid. Bring in your completed credential and earn a cash bonus on your next paycheck.</p>
+    <div class="table-scroll">
+      <table>
+        <thead><tr><th>Credential</th><th>Type</th><th>Bonus</th></tr></thead>
+        <tbody>
+          <tr><td>First Aid / CPR / AED</td><td><span class="tag req">Required</span></td><td class="num">$50.00</td></tr>
+          <tr><td>ServSafe ANSI Food Handler</td><td><span class="tag">Optional</span></td><td class="num">$25.00</td></tr>
+          <tr><td>Virginia DMV Learner's Permit</td><td><span class="tag">Optional</span></td><td class="num">$50.00</td></tr>
+          <tr><td>Grow with Google Digital &amp; Productivity</td><td><span class="tag">Optional</span></td><td class="num">$50.00</td></tr>
+          <tr><td>Intuit Academy Bookkeeping</td><td><span class="tag">Optional</span></td><td class="num">$50.00</td></tr>
+          <tr><td>Next Gen Personal Finance (NGPF)</td><td><span class="tag">Optional</span></td><td class="num">$35.00</td></tr>
+        </tbody>
+        <tfoot><tr><td colspan="2">Total available</td><td class="num">$260.00</td></tr></tfoot>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <h2>What we're looking for</h2>
+    <ul class="plain">
+      <li>Age 14–15, eligible to work under Virginia youth labor rules</li>
+      <li>Minimum <strong>3.0 GPA / "B" average</strong>, maintained throughout employment</li>
+      <li>Comfortable with, or eager to learn, Google Sheets, Docs, Drive and Calendar</li>
+      <li>Punctual, organized and able to keep family financial information confidential</li>
+      <li>Willing to complete First Aid / CPR / AED certification</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Youth labor compliance</h2>
+    <p>This position follows Virginia Department of Labor and Industry (DOLI) and federal FLSA standards for workers ages 14–15.</p>
+    <h3 class="eyebrow">While school is in session</h3>
+    <div class="rules">
+      <div><b>0 hrs</b><span>during school hours</span></div>
+      <div><b>3 hrs</b><span>max on a school day, outside class time</span></div>
+      <div><b>8 hrs</b><span>max on a non-school day: Saturdays, Sundays, holidays and days off</span></div>
+      <div><b>18 hrs</b><span>max per school week, weekend hours included</span></div>
+      <div><b>7 AM–7 PM</b><span>allowed work window every day, weekends included</span></div>
+    </div>
+    <h3 class="eyebrow">Summer break and other non-school weeks</h3>
+    <div class="rules">
+      <div><b>8 hrs</b><span>max per day</span></div>
+      <div><b>40 hrs</b><span>max per week</span></div>
+      <div><b>7 AM–9 PM</b><span>allowed work window, June 1 through Labor Day</span></div>
+    </div>
+    <h3 class="eyebrow">Year-round</h3>
+    <div class="rules">
+      <div><b>30 min</b><span>meal break on any shift over 5 hours</span></div>
+    </div>
+    <p><strong>Special engagements.</strong> Occasional special engagements, such as a full-day assignment, may be scheduled outside these limits when both the employee and the employer agree in writing in a signed Special Engagement Agreement. All hours worked under such an agreement are paid in full.</p>
+  </section>
+
+  <section>
+    <h2>Documents you'll need to provide</h2>
+    <p>Bring copies of these to your in-person practical interview. Don't upload them to the online application.</p>
+    <div class="table-scroll">
+      <table>
+        <thead><tr><th>Document</th><th>Purpose</th><th>Accepted forms</th></tr></thead>
+        <tbody>
+          <tr><td>Virginia employment certificate (work permit)</td><td>Required for workers ages 14–15 in Virginia</td><td>Certificate issued online through the Virginia Department of Labor and Industry</td></tr>
+          <tr><td>Proof of identity and work authorization (Form I-9)</td><td>Federal requirement for every new employee</td><td>A U.S. passport by itself, <em>or</em> one document from each of the next two rows</td></tr>
+          <tr><td>Proof of identity (I-9 List B)</td><td>Shows who you are</td><td>School ID card with photo, school record or report card, or a parent's signed attestation (allowed for workers under 18)</td></tr>
+          <tr><td>Proof of work eligibility (I-9 List C)</td><td>Shows you can legally work in the U.S.</td><td>Social Security card or certified U.S. birth certificate</td></tr>
+          <tr><td>IRS Form W-4</td><td>Sets up tax withholding for your paycheck</td><td>Completed and signed form</td></tr>
+          <tr><td>Direct deposit authorization</td><td>Sends your pay to your bank account</td><td>Signed form with a voided check or bank letter</td></tr>
+          <tr><td>Most recent school transcript</td><td>Proves the required 3.0 GPA / "B" average</td><td>Official transcript or report card covering the current or most recent grading period</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <h2>How to apply</h2>
+    <ol class="steps">
+      <li><div><strong>Submit an application.</strong> Tell us about yourself, your schedule and why you want the role.</div></li>
+      <li><div><strong>Virtual screening (15–20 min).</strong> A short video call. Be on time, frame your camera well and come ready to talk about your goals.</div></li>
+      <li><div><strong>In-person practical (25–30 min).</strong> Work through a problem-solving scenario, a spreadsheet data entry drill and a Google Drive folder challenge. Bring copies of the documents listed above.</div></li>
+      <li><div><strong>Offer &amp; onboarding.</strong> Sign the offer letter and employment agreement, complete your W-4, direct deposit and confidentiality forms, and receive your ID badge and work email.</div></li>
+    </ol>
+  </section>
+
+  <section id="apply">
+    <h2>Apply online</h2>
+    <p>The application takes about 10 minutes. Selected applicants are invited to a short video screening, then an in-person practical.</p>
+    <div class="apply-grid">
+      <div class="apply-card">
+        <p><strong>Before you start,</strong> have your school name, grade, the days you're available and a few sentences on why you want this job.</p>
+        <p><a class="cta" id="apply-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSe8SBfp4_tcRyVpepjSqZr-jNrpa2Ct2P5kQN2vm0nPtUQpdQ/viewform?usp=header" target="_blank" rel="noopener">Open the application →</a></p>
+        <p class="note" id="apply-pending" hidden>The application form opens soon. Check back shortly.</p>
+      </div>
+      <aside class="qr">
+        <div class="qr-box" id="qr" role="img" aria-label="QR code linking to this posting's application section"></div>
+        <small>Scan to open this posting on a phone</small>
+        <div class="linkline" id="apply-link"></div>
+        <button type="button" class="ghost" id="copy-link">Copy link</button>
+      </aside>
+    </div>
+  </section>
+
+  <footer>Dowway, LLC · Disputanta, VA · Posted October 2026</footer>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode-generator/1.4.4/qrcode.min.js"></script>
+<script>
+(function () {
+  // Paste the Google Form link between the quotes.
+  var FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSe8SBfp4_tcRyVpepjSqZr-jNrpa2Ct2P5kQN2vm0nPtUQpdQ/viewform?usp=header";
+  var PAGE_URL = "https://sethdow25-hub.github.io/dowway-careers/#apply";
+  var $ = function (id) { return document.getElementById(id); };
+
+  var btn = $("apply-btn");
+  if (FORM_URL) { btn.href = FORM_URL; }
+  else { btn.hidden = true; $("apply-pending").hidden = false; }
+
+  $("apply-link").textContent = PAGE_URL;
+  try {
+    var qr = qrcode(0, "M"); qr.addData(PAGE_URL); qr.make();
+    $("qr").innerHTML = qr.createSvgTag({ cellSize: 4, margin: 2, scalable: true });
+  } catch (e) { $("qr").textContent = "QR code unavailable"; }
+
+  $("copy-link").addEventListener("click", function () {
+    var b = this;
+    if (navigator.clipboard) {
+      navigator.clipboard.writeText(PAGE_URL).then(function () { b.textContent = "Copied"; }, select);
+    } else { select(); }
+    function select() {
+      var r = document.createRange(); r.selectNodeContents($("apply-link"));
+      var s = getSelection(); s.removeAllRanges(); s.addRange(r); b.textContent = "Press Ctrl+C";
+    }
+  });
+})();
+</script>
+</body>
+</html>
